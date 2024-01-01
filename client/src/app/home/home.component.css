@@ -1,0 +1,13 @@
+
+
+/* Add this to your styles.css or component-specific styles */
+
+.zoomable-image {
+    width: 500px;
+    height: 500px;
+    transition: transform 0.3s ease-in-out; /* Apply transition for smoother zoom effect */
+}
+
+.zoomable-image:hover {
+    transform: scale(1.1); /* Increase the scale value for a larger zoom effect */
+}
