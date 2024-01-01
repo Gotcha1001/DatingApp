@@ -56,9 +56,16 @@
                 "styles": {
                   "minify": true,
                   "inlineCritical": false
-                },
+                  },
                 "fonts": true
-              }
+              },
+            
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
             },
             "development": {
               "buildOptimizer": false,
