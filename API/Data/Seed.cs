@@ -42,7 +42,8 @@ namespace API.Data
 
             foreach (var user in users)
             {
-   
+
+              
                 user.UserName = user.UserName.ToLower();
                 user.Created = DateTime.SpecifyKind(user.Created, DateTimeKind.Utc);
                 user.LastActive = DateTime.SpecifyKind(user.LastActive, DateTimeKind.Utc);
