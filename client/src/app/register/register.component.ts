@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
  @Output() cancelRegister = new EventEmitter();
   registerForm: FormGroup = new FormGroup({});
   maxDate: Date = new Date();
-  validationErrors: string[] | undefined;
+  validationErrors: string[] = [];
  
  constructor(private accountService: AccountService, private toastr: ToastrService,
    private fb: FormBuilder, private router: Router){}
@@ -57,6 +57,7 @@ matchValues(matchTo: string): ValidatorFn {
        this.router.navigateByUrl('/members');
      },
      error: (error) => {
+        console.log('Server error:', error);
        this.validationErrors = error
      }
    })
